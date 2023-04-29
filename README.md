@@ -1,4 +1,4 @@
-# Flutter Admin Pane
+# Flutter Admin Panel
 
 This program is to test flutter and dart, testing out a basic admin panel for mobile, tablet & desktop devices.
 
