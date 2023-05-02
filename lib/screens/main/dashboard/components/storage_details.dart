@@ -32,8 +32,8 @@ class StorageDetails extends StatelessWidget {
           StorageInfoCard(
             svgSource: "assets/icons/Documents.svg",
             title: "Documents Files",
-            amountOfFiles: "1.1GB",
-            numOfFiles: 1098,
+            amountOfFiles: "16.1GB",
+            numOfFiles: 3971,
           ),
           StorageInfoCard(
             svgSource: "assets/icons/media.svg",
@@ -44,13 +44,13 @@ class StorageDetails extends StatelessWidget {
           StorageInfoCard(
             svgSource: "assets/icons/folder.svg",
             title: "Other Files",
-            amountOfFiles: "16.1GB",
-            numOfFiles: 3971,
+            amountOfFiles: "5.4GB",
+            numOfFiles: 1098,
           ),
           StorageInfoCard(
             svgSource: "assets/icons/unknown.svg",
-            title: "Unknown",
-            amountOfFiles: "5.4GB",
+            title: "Unknown Files",
+            amountOfFiles: "1.1GB",
             numOfFiles: 391,
           ),
         ],
