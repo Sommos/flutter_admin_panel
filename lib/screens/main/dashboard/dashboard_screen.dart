@@ -1,7 +1,7 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import '/screens/constants.dart';
+import 'components/chart.dart';
 import 'components/header.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -31,6 +31,7 @@ class DashboardScreen extends StatelessWidget {
                 Expanded(
                   flex: 2,
                   child: Container(
+                    padding: const EdgeInsets.all(defaultPadding),
                     height: 500.0,
                     decoration: const BoxDecoration(
                       color: secondaryColor,
@@ -46,6 +47,8 @@ class DashboardScreen extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                           ),
                         ),
+                        SizedBox(height: defaultPadding),
+                        Chart(),
                       ],
                     ),
                   ),
