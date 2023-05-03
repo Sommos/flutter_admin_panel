@@ -29,7 +29,7 @@ List demoMyFiles = const [
     color: primaryColor,
     percentage: 35,
   ),
-CloudStorageInfo(
+  CloudStorageInfo(
     title: "Google Drive",
     numOfFiles: 204,
     svgSource: "assets/icons/google_drive.svg",
