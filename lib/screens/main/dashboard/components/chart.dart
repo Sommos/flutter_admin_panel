@@ -10,21 +10,30 @@ class Chart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // wrap the chart in a SizedBox widget to give it a fixed height
     return SizedBox(
       height: 200.0, 
+      // wrap the chart in a Stack widget to allow the chart to be displayed on top of the text
       child: Stack(
         children: [
           PieChart(
             PieChartData(
+              // remove the chart's border
               sectionsSpace: 0.0,
+              // remove the chart's center space
               centerSpaceRadius: 70.0,
+              // start the chart at a 90 degree offset
               startDegreeOffset: -90.0,
+              // add the number of sections equal to the length of the pieChartSelectionData array
               sections: pieChartSelectionData,
             ),
           ),
+          // add the text to the center of the chart
           Positioned.fill(
             child: Column(
+              // align the widgets to the center
               mainAxisAlignment: MainAxisAlignment.center,
+              // array contains the text to be displayed in the middle of the pie chart
               children: [
                 const SizedBox(height: defaultPadding),
                 Text(
@@ -45,11 +54,16 @@ class Chart extends StatelessWidget {
   }
 }
 
+// create an array of PieChartSectionData objects
 List<PieChartSectionData> pieChartSelectionData = [
   PieChartSectionData(
+    // set the color of the section
     color: primaryColor,
+    // set the value of the section
     value: 25.0,
+    // remove the title from the section
     showTitle: false,
+    // set the radius of the section
     radius: 25.0,
   ),
   PieChartSectionData(

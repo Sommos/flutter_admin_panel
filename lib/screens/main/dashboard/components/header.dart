@@ -44,10 +44,12 @@ class ProfileCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(left: defaultPadding),
+      // add a padding to the container
       padding: const EdgeInsets.symmetric(
         horizontal: defaultPadding,
         vertical: defaultPadding / 2,
       ),  
+      // add a decoration to the container
       decoration: BoxDecoration(
         color: secondaryColor,
         borderRadius: const BorderRadius.all(Radius.circular(10.0)),
@@ -55,6 +57,7 @@ class ProfileCard extends StatelessWidget {
       ),
       child: Row(
         children: [
+          // add an image asset
           Image.asset(
             "assets/images/profile_pic.png", 
             height: 38.0,
@@ -79,16 +82,19 @@ class SearchField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      // input text box with a hint text of "Search"
       decoration: InputDecoration(
         hintText: "Search",
         fillColor: secondaryColor,
         filled: true,
+        // remove the border
         border: const OutlineInputBorder(
           borderSide: BorderSide.none,
           borderRadius: BorderRadius.all(
             Radius.circular(10.0),
           ),
         ),
+        // add a suffix icon using InkWell (InkWell is a widget that responds to taps with a visual animation)
         suffixIcon: InkWell(
           onTap: () {},
           child: Container(
@@ -96,12 +102,14 @@ class SearchField extends StatelessWidget {
             margin: const EdgeInsets.symmetric(
               horizontal: defaultPadding / 2,
             ),
+            // add a decoration to the container
             decoration: const BoxDecoration(
               color: primaryColor,
               borderRadius: BorderRadius.all(
                 Radius.circular(10.0),
               ),
             ),
+            // add an svg icon to the container
             child: SvgPicture.asset("assets/icons/Search.svg"),
           ),
         ),

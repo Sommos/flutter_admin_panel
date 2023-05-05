@@ -13,11 +13,13 @@ class StorageDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(defaultPadding),
+      // set the container's background color to the secondaryColor and apply a border radius
       decoration: const BoxDecoration(
         color: secondaryColor,
         borderRadius: BorderRadius.all(Radius.circular(10.0)),
       ),
       child: Column(
+        // align the widgets to the start
         crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
           Text(
@@ -28,7 +30,9 @@ class StorageDetails extends StatelessWidget {
             ),
           ),
           SizedBox(height: defaultPadding),
+          // add the chart
           Chart(),
+          // add the storage info cards
           StorageInfoCard(
             svgSource: "assets/icons/Documents.svg",
             title: "Documents Files",

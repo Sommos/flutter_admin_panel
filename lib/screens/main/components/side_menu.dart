@@ -8,9 +8,12 @@ class SideMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // add a drawer to the scaffold
     return Drawer(
+      // add a container to the drawer
       child: SingleChildScrollView(
         child: Column(
+          // array of drawer headers that include different images for the side menu
           children: [
             DrawerHeader(
               child: Image.asset("assets/images/logo.png"),
@@ -62,6 +65,7 @@ class SideMenu extends StatelessWidget {
   }
 }
 
+// create a drawer list tile widget
 class DrawerListTile extends StatelessWidget {
   const DrawerListTile({
     super.key, 
@@ -70,23 +74,28 @@ class DrawerListTile extends StatelessWidget {
     required this.press,
   });
 
+  // add final variables to be used in this widget
   final String title;
   final String svgScource;
   final VoidCallback press;
 
   @override
   Widget build(BuildContext context) {
+    // add a list tile to the drawer
     return ListTile(
       onTap: press,
+      // add a horizontal title gap
       horizontalTitleGap: 0.0,
+      // add a leading widget to the list tile
       leading: SvgPicture.asset(
         svgScource,
         height: 16.0,
+        // add a color filter to the svg image
         colorFilter: const ColorFilter.mode(
           Colors.white54, 
           BlendMode.srcIn,
         ),
-      ), 
+      ),
       title: Text(
         title,
         style: const TextStyle(
