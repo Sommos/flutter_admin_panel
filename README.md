@@ -12,3 +12,8 @@ Clone the repo:
 
     git clone https://github.com/Sommos/flutter_admin_panel
     cd flutter_admin_panel
+
+<p align="center">
+    <img src="assets/images/admin_panel0.png" width="250" />
+    <img src="assets/images/admin_panel1.png" width="250" />
+</p>
