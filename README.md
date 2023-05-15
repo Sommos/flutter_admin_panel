@@ -1,5 +1,10 @@
 # Flutter Admin Panel
 
+<p align="center">
+    <img src="assets/assets/images/admin_panel0.png" width="1181" />
+    <img src="assets/assets/images/admin_panel1.png" width="250" />
+</p>
+
 This program is to test flutter and dart, testing out a basic admin panel for mobile, tablet & desktop devices.
 
 This has been built into a web application accessible here: https://sommos.github.io/flutter_admin_panel/
@@ -14,8 +19,3 @@ Clone the repo:
 
     git clone https://github.com/Sommos/flutter_admin_panel
     cd flutter_admin_panel
-
-<p align="center">
-    <img src="assets/images/admin_panel0.png" width="1181" />
-    <img src="assets/images/admin_panel1.png" width="250" />
-</p>
